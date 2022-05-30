@@ -32,7 +32,7 @@ function [fval] = empc_obj4(s)
     fval4 = 0;
     for i = 0:N-1
         f = Xpred4(nx*i+1)^4-4*Xpred4(nx*i+1)^3+Xpred4(nx*i+1)^2 +Xpred4(nx*i+nx)^2;
-        fval3 = fval3 + f;
+        fval4 = fval4 + f;
     end
 
     
