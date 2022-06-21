@@ -218,24 +218,24 @@ clc;
     Pz = Polyhedron(Az,bz);
     
     
-    figure
-    s0 = Px.plot('color','r');
-    hold on
-    s1 = Pz.plot('color','g');
+%     figure
+%     s0 = Px.plot('color','r');
+%     hold on
+%     s1 = Pz.plot('color','g');
     
-    for i = 1:1:M
-        set_omega=Z(:,i)+Xi;
-        set_omega.plot('alpha',0.3,'color',[0.3 0.3 0.3]);
-    end
+%     for i = 1:1:M
+%         set_omega=Z(:,i)+Xi;
+%         set_omega.plot('alpha',0.3,'color',[0.3 0.3 0.3]);
+%     end
     
     
-    p1 = plot(X(1,:),X(2,:),'LineWidth',1.5);
-    p3 = plot(Z(1,:),Z(2,:),':','LineWidth',1.5);
+%     p1 = plot(X(1,:),X(2,:),'LineWidth',1.5);
+%     p3 = plot(Z(1,:),Z(2,:),':','LineWidth',1.5);
     
-    grid on
-    xlabel({'$x_{1}$'},'Interpreter','latex');
-    ylabel({'$x_{2}$'},'Interpreter','latex');
-    legend([s0 s1 p1, p3],{'$X$','$Z$','$x$','$z$'},'Interpreter','latex','Location','bestoutside');
+%     grid on
+%     xlabel({'$x_{1}$'},'Interpreter','latex');
+%     ylabel({'$x_{2}$'},'Interpreter','latex');
+%     legend([s0 s1 p1, p3],{'$X$','$Z$','$x$','$z$'},'Interpreter','latex','Location','bestoutside');
     
     figure;
     plot(1:M,VavSum);
