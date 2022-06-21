@@ -241,7 +241,7 @@ clc;
         end
 
         VavSum(t+1) = X(1,t+1)^2+X(2,t+1)^2; 
-        AsyAve(t+1) = VavSum(t+1)/(t+1);
+        AsyAve(t+1) = sum(VavSum)/(t+1);
     end
     
     
